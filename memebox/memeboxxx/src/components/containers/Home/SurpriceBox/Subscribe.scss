@@ -1,0 +1,42 @@
+
+.Box-Layout {
+    display: flex;
+    font-weight: 600;
+    font-size: medium;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 70%;
+    text-transform: capitalize;
+    
+    .Box-content-1 {
+        flex: 1;
+        // border: 2px solid blueviolet;
+        margin-top: 40px;
+      p{
+        margin: 4%;
+        h1{
+          color:#e16390;
+        }
+      }
+        h3{
+            margin: 4%;
+            color: orange;
+        }
+      }
+      
+      .Box-content-1:first-child {
+        margin-right: 10px;
+      }
+    
+  }
+
+
+  @media (max-width: 780px) and (min-width: 300px) {
+    .Box-Layout {
+display: block;
+    }
+  }
+
+  
+  

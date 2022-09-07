@@ -1,0 +1,48 @@
+@import "../../../assets/scss/index.scss";
+
+.ShopBy__Container {
+  position: relative;
+  margin: 50px 0;
+
+  .list-header {
+    margin-bottom: 50px;
+  }
+
+  .AspectRatio--tall {
+    max-height: none;
+  }
+
+  .Product__Image {
+    transition: all 0.7s ease;
+    border-radius: 100%;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .ProductItem__Info {
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+}
+
+.PageHeaderWithBackground {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  min-height: 330px;
+  background-size: cover;
+  color: #ffffff;
+  overflow: hidden;
+
+  @media screen and (min-width: 641px) {
+    .PageHeader {
+      margin-bottom: 30px;
+    }
+  }
+}

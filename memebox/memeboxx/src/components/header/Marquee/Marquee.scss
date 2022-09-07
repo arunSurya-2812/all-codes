@@ -1,0 +1,26 @@
+.Marquee__Wrapper {
+  background: black;
+  overflow: hidden;
+  padding: 1rem;
+
+  .Marquee {
+    display: inline-block;
+    color: white;
+    white-space: nowrap;
+    text-transform: uppercase;
+    animation: marquee 20s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

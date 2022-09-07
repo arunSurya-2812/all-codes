@@ -1,0 +1,133 @@
+.gifts-container {
+  // background-image: url("../../../../assets/image/TopBanner.png");
+  height: 28em;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.knowmore__btn {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  width: 23%;
+  height: 12%;
+  background: transparent linear-gradient(90deg, #ff5800 0%, #feba2d 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 35px;
+  opacity: 1;
+  color: white;
+  font-size: 33px;
+}
+
+.gifts-text {
+  font-family: Poppins;
+  margin: 6% 0% 0% 2%;
+  text-align: center;
+}
+
+.gifts-text-header {
+  font-size: 30px;
+}
+.gifts-text-subheader {
+  font-size: 25px;
+}
+
+.giftsImg {
+  padding: 3%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gifts-container {
+    // background-image: url("../../../../assets/image/TopBanner.png");
+    height: 25em;
+    width: 100%;
+    position: relative;
+  }
+  .gifts-text {
+    font-family: Poppins;
+    margin: 8% 0% 0% 0%;
+    text-align: center;
+  }
+  .gifts-text-header {
+    font-size: 27px;
+  }
+  .gifts-text-subheader {
+    font-size: 20px;
+  }
+  .knowmore__btn {
+    top: 7.5em;
+    left: 4em;
+  }
+  .giftsImg {
+    padding: 5em;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .gifts-container {
+    // background-image: url("../../../../assets/image/TopBanner.png");
+    height: 20em;
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  .gifts-text {
+    font-size: 20px;
+    font-family: Poppins;
+    margin: 6% 0% 0% 0%;
+    text-align: center;
+  }
+  .gifts-text-header {
+    font-size: 20px;
+  }
+  .gifts-text-subheader {
+    font-size: 16px;
+  }
+  .knowmore__btn {
+    top: 8em;
+    left: 2.5em;
+    font-size: 22px;
+  }
+  .giftsImg {
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .gifts-container {
+    // background-image: url("../../../../assets/image/TopBanner.png");
+    height: 18em;
+    width: 100%;
+    position: relative;
+    display: contents;
+  }
+  .gifts-text {
+    font-family: Poppins;
+    margin: 6% 0% 0% 0%;
+    text-align: center;
+  }
+  .gifts-text-header {
+    font-size: 20px;
+  }
+  .gifts-text-subheader {
+    font-size: 16px;
+  }
+  .knowmore__btn {
+    top: 281em;
+    left: 40%;
+    font-size: 16px;
+  }
+  .giftsImg {
+    padding: 70px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .knowmore__btn {
+    top: 2em;
+    left: 40%;
+    font-size: 16px;
+  }
+}

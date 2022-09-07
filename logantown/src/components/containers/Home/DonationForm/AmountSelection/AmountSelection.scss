@@ -1,0 +1,157 @@
+@import "../../../../../assets/scss/index.scss";
+
+.form-columns-1 .input {
+  margin-right: 0 px;
+}
+
+.inputs-list {
+  padding: 0;
+  list-style: none;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  width: 100%;
+}
+
+.hs-form-radio {
+  padding-left: 0;
+  line-height: 1.5;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.hs-form-radio-display {
+  color: #fff;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 0.5rem;
+  line-height: 1;
+  position: relative;
+  width: 100%;
+}
+
+.hs-input {
+  background-color: #fff;
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid #dbdee8;
+  border-radius: 3px;
+  padding: 7px;
+  color: #555a5e;
+  max-width: none;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.hs-span {
+  display: block;
+  font-style: normal;
+  font-size: 1.2rem;
+  background: $primary-color-red;
+  border-radius: 30px;
+  padding: 1rem 0;
+  text-align: center;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.hs-input:checked + span {
+  background: #d55b02;
+  border-color: #fff;
+}
+
+.hs-field-desc {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  width: 100%;
+  font-weight: 300;
+  margin: 10px 0;
+  padding: 0 0.5em;
+}
+
+.df-payment-field {
+  margin-top: 30px;
+}
+
+.df-f-label {
+  color: #fff;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.df-field {
+  width: 50%;
+  float: left;
+}
+
+.input-group {
+  display: table;
+  border-collapse: collapse;
+  width: 97%;
+  margin-top: 5px;
+}
+
+.input-group > div {
+  display: table-cell;
+  border: 2px solid #ddd;
+  vertical-align: middle;
+}
+
+.input-group-icon {
+  background: #eee;
+  color: #777;
+  padding: 0 12px;
+}
+
+.input-group-area {
+  width: 100%;
+  padding-right: 0px;
+}
+
+.df-input {
+  display: block;
+  height: 36px !important;
+  border: 0px solid #dbdee8 !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  max-width: none;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+
+@media (min-width: 1024px) {
+  .hs-form-radio {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hs-form-radio {
+    flex: 1 0 calc(50% - 2rem);
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .df-field {
+    float: none;
+    width: 100%;
+  }
+}

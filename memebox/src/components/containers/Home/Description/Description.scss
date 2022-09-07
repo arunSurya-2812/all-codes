@@ -1,0 +1,39 @@
+.description-container {
+  display: flex;
+  background-color: black;
+  height: 100%;
+  position: relative;
+}
+
+.description-container > div {
+  width: 40%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.description-icons {
+  position: absolute;
+  top: 20px;
+  padding: 0px 0px 0px 4%;
+}
+
+.explore__text {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 426px) {
+  .explore__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .description-icons {
+    position: absolute;
+    top: 20px;
+    padding: 0px 0px 0px 6%;
+  }
+}

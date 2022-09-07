@@ -1,0 +1,217 @@
+@import "../../../assets/scss/index.scss";
+
+.team-area {
+  padding: 60px 0;
+}
+
+.team-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.team-header,
+.team-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .team-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-container {
+    max-width: 720px;
+  }
+  .team-header {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .team-wrapper {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .team-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-container {
+    max-width: 1200px;
+  }
+}
+
+.site-heading {
+  text-align: center !important;
+  color: black;
+  margin-bottom: 60px;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.site-heading h2 {
+  display: block;
+  font-family: "JosefinSansBold";
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.site-heading h2 span {
+  color: $primary-color-red;
+}
+
+.site-heading h4 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.site-heading h4::before {
+  background: $primary-color-red none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.site-heading h2 span {
+  color: $primary-color-red;
+}
+
+.team-items {
+  justify-content: center;
+}
+
+.team-wrapper {
+  margin-bottom: 30px;
+}
+
+.team-thumb {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  height: 250px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.team-thumb::after {
+  background: #232323 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+}
+
+.team-item:hover .team-thumb::after {
+  opacity: 0.7;
+}
+
+.team-overlay {
+  top: -100%;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
+
+.team-item:hover .team-overlay {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.team-overlay p {
+  color: #ffffff;
+}
+
+.team-overlay h4 {
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.team-img {
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 40px 20px 20px;
+  position: relative;
+  text-align: center;
+  z-index: 9;
+  color: black;
+}
+
+.team-info-message {
+  height: 50px;
+  line-height: 40px;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 50px;
+}
+
+.team-info-message span {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #cccccc;
+  box-sizing: border-box;
+  color: $primary-color-red;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+}
+
+.team-info h4 {
+  font-family: "JosefinSansSemiBold";
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.team-info span {
+  color: $primary-color-red;
+  font-family: "JosefinSansSemiBold";
+  text-transform: uppercase;
+}
